@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#242424">
+<title>CSS Transform Hover Effect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header><h1>CSS Transform Hover Effect</h1><p>Hover over each tile to preview the transform</p></header>
+  <section class="effects">
+    <article class="effect-card"><div class="demo"><button class="tile scale" type="button">Scale Up</button></div><div class="details"><h2>Scale Up</h2><pre><code>.scale:hover {
+  transform: scale(1.2);
+}</code></pre><button class="copy" data-code="c1">Copy CSS</button><code class="hidden" id="c1">.scale:hover {
+  transform: scale(1.2);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile rotate" type="button">Rotate</button></div><div class="details"><h2>Rotate</h2><pre><code>.rotate:hover {
+  transform: rotate(25deg);
+}</code></pre><button class="copy" data-code="c2">Copy CSS</button><code class="hidden" id="c2">.rotate:hover {
+  transform: rotate(25deg);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile move-up" type="button">Move Up</button></div><div class="details"><h2>Move Up</h2><pre><code>.moveUp:hover {
+  transform: translateY(-25px);
+}</code></pre><button class="copy" data-code="c3">Copy CSS</button><code class="hidden" id="c3">.moveUp:hover {
+  transform: translateY(-25px);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile skew-x" type="button">Skew X</button></div><div class="details"><h2>Skew X</h2><pre><code>.skewX:hover {
+  transform: skewX(15deg);
+}</code></pre><button class="copy" data-code="c4">Copy CSS</button><code class="hidden" id="c4">.skewX:hover {
+  transform: skewX(15deg);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile rotate360" type="button">Rotate 360°</button></div><div class="details"><h2>5. Rotate 360°</h2><pre><code>.rotate360:hover {
+  transform: rotate(360deg);
+}</code></pre><button class="copy" data-code="c5">Copy CSS</button><code class="hidden" id="c5">.rotate360:hover {
+  transform: rotate(360deg);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile move-right" type="button">Move Right</button></div><div class="details"><h2>Move Right</h2><pre><code>.moveRight:hover {
+  transform: translateX(25px);
+}</code></pre><button class="copy" data-code="c6">Copy CSS</button><code class="hidden" id="c6">.moveRight:hover {
+  transform: translateX(25px);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile scale-down" type="button">Scale Down</button></div><div class="details"><h2>Scale Down</h2><pre><code>.scaleDown:hover {
+  transform: scale(.8);
+}</code></pre><button class="copy" data-code="c7">Copy CSS</button><code class="hidden" id="c7">.scaleDown:hover {
+  transform: scale(.8);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile skew-y" type="button">Skew Y</button></div><div class="details"><h2>Skew Y</h2><pre><code>.skewY:hover {
+  transform: skewY(15deg);
+}</code></pre><button class="copy" data-code="c8">Copy CSS</button><code class="hidden" id="c8">.skewY:hover {
+  transform: skewY(15deg);
+}</code></div></article>
+    <article class="effect-card"><div class="demo"><button class="tile flip-x" type="button">Flip X</button></div><div class="details"><h2>Flip X</h2><pre><code>.flipX:hover {
+  transform: rotateX(180deg);
+}</code></pre><button class="copy" data-code="c9">Copy CSS</button><code class="hidden" id="c9">.flipX:hover {
+  transform: rotateX(180deg);
+}</code></div></article>
+    <article class="effect-card"><div class="demo perspective"><button class="tile pop3d" type="button">3D Pop</button></div><div class="details"><h2>3D Pop Effect</h2><pre><code>.pop3d:hover {
+  transform: perspective(500px)
+    translateZ(45px) rotateX(8deg);
+}</code></pre><button class="copy" data-code="c10">Copy CSS</button><code class="hidden" id="c10">.pop3d:hover {
+  transform: perspective(500px)
+    translateZ(45px) rotateX(8deg);
+}</code></div></article>
+  </section>
+  <p class="footer">10 CSS transform hover effects · Hover or tap each tile · Copy any snippet</p>
+  <div class="toast" id="toast" role="status"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
